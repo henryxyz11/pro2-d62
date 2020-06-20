@@ -16,40 +16,62 @@ h1, h2, h3, h4, h5, h6, p, div {
 }
 
 body {
-    font-family: Candara, Helvetica, sans-serif;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "fira_sans_condensedbold", Arial, Helvetica, sans-serif;
+    /* font-family: "fira_sans_condensedbold", Arial, Helvetica, sans-serif; */
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 48px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    padding-right: 8px;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
 .clear {
     clear: left;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 32px;
+    text-align: center;
+    background-color: #00aa13;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn:active {
+    opacity: 1;
 }
 
 header {
@@ -76,14 +98,9 @@ main {
     color: #232323;
 }
 
-.products {
-    display: flex;
-}
-
 .food {
     float: left;
     width: 25%;
-    /* flex: auto; */
 }
 
 .food-pic {
@@ -92,9 +109,14 @@ main {
 
 .food-pic:hover {
     animation: naik 2s infinite;
-    animation-play-state: running;
-    /* opacity: 0.9; */
     z-index: 9;
+}
+
+.food-pic img {
+    flex: auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .food-pic p {
@@ -102,12 +124,22 @@ main {
     top: 44%;
     width: 100%;
     color: white;
+    /* outline-style: groove; */
+    /* outline-color: #00aa13; */
+    background: rgba(0, 170, 19, 0.6);
+    font-size: 18px;
 }
 
 .food-text {
     width: 80%;
-    display: inline-block;
-    margin-top: 15px;
+    /* display: inline-block; */
+    margin: 16px auto;
     font-size: 15px;
-    color: #b3aeb5;
+    color: #000000;
+    display: none;
+}
+
+.lihat-menu {
+    margin-top: 16px;
+    float: right;
 }
