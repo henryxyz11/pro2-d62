@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'fira_sans_condensedbold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/FiraSansCondensed-Bold-webfont.eot');
+    src: url('../fonts/FiraSansCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FiraSansCondensed-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/FiraSansCondensed-Bold-webfont.woff') format('woff'),
+         url('../fonts/FiraSansCondensed-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/FiraSansCondensed-Bold-webfont.svg#fira_sans_condensedbold') format('svg');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+        url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
