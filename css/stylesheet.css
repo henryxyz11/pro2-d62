@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-    padding-right: 8px;
 
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -67,11 +66,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .btn:active {
     opacity: 1;
+}
+
+.btn span {
+    margin-left: 10px;
 }
 
 header {
@@ -85,9 +88,7 @@ header {
 }
 
 main {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-bottom: 88px;
     background-color: #f7f7f7;
     text-align: center;
 }
@@ -98,9 +99,14 @@ main {
     color: #232323;
 }
 
+.heading h1 {
+    font-size: 32px;
+}
+
 .food {
     float: left;
     width: 25%;
+    font-size: 18px;
 }
 
 .food-pic {
@@ -124,17 +130,12 @@ main {
     top: 44%;
     width: 100%;
     color: white;
-    /* outline-style: groove; */
-    /* outline-color: #00aa13; */
     background: rgba(0, 170, 19, 0.6);
-    font-size: 18px;
 }
 
 .food-text {
     width: 80%;
-    /* display: inline-block; */
     margin: 16px auto;
-    font-size: 15px;
     color: #000000;
     display: none;
 }

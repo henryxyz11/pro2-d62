@@ -1,5 +1,21 @@
 /* Untuk tablet */
 @media all and (max-width: 1000px) {
+    main {
+        padding-bottom: 40px;
+    }
+
+    .heading {
+        padding-bottom: 30px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .food {
+        font-size: 14px;
+    }
+
     .food-pic {
         flex-wrap: wrap;
         max-width: 160px;
@@ -23,6 +39,22 @@
 @media all and (max-width: 670px) {
     .btn {
         width: 100%;
+    }
+
+    main {
+        padding-bottom: 24px;
+    }
+
+    .heading {
+        padding-bottom: 10px;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .food {
+        font-size: 12px;
     }
 
     .food-pic {
