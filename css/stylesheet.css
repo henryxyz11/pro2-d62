@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +18,9 @@ h1, h2, h3, h4, h5, h6, p, div {
 }
 
 body {
-    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+/*     font-family: "Century Gothic", Arial, Helvetica, sans-serif; */
+    margin:0;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,14 +81,188 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
-header {
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 0.1px solid rgba(255,255,255, 0.3);
+}
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
-    max-width: 1170px;
+/*     max-width: 1170px; */
     padding: 0 15px;
     margin: 0 auto;
+    max-width: 1140px;
+    margin: auto;
+}
+
+header .logo{
+    margin-top: 10px;
+}
+
+header .logo a{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+header .logo a:hover{
+    color: #FCDC31;
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header .navbar ul li a{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: white;
+    position: relative;
+    font-weight: 600;
+   
+}
+
+header .navbar ul li a:hover{
+    color: #FCDC31;
+    font-weight: 700;
+}
+
+
+header .navbar ul li a.active{
+    color: #FCDC31;
+    font-weight: 900px;
+}
+
+header .navbar ul li a:before{
+    content: '';
+    height: 3px;
+    background-color: white;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+
+header .navbar ul li a:hover:before{
+    width: 100%;
+    left: 0%;
+}
+
+header .navbar ul li a.active:before{
+    width: 100%;
+    left: 0%;
+}
+
+.beranda{
+    min-height: 100vh;
+    background-image: url("beranda.png");
+    background-size: cover;
+
+}
+
+
+.beranda .full-screen{
+    min-height: 100vh;
+}
+
+.beranda .beranda-content{
+    display: flex;
+    flex: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.beranda .beranda-content .block{
+    flex: 70%;
+    max-width: 70%;
+    margin-top: 120px;
+}
+
+.beranda .beranda-content .block h6{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.beranda .beranda-content .block h1{
+    color: white;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 95%;
+    margin-bottom: 30px;
+}
+
+.beranda .beranda-content .block span{
+    color: #FCDC31;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.beranda .beranda-content .block .pesan-button a{
+    border-radius: 40px;
+    background-color: #00AA13;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.beranda .beranda-content .block .pesan-button a:hover{
+    background-color: white;
+    color: #00AA13;
+    font-weight: 900;
+}
+
+.beranda .beranda-content .block .social-media a{
+    width: 30px;
+    display: inline-block;
+    margin: 30px 0px 10px  10px;
+}
+
+.beranda .beranda-content .block .social-media a:hover{
+    transform: scale(1.5);
+}
+
+.section-title{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+.section-title .color{
+    color: #00AA13;
+}
+
+.pesan-content{
+    background-color: #00AA13;
 }
 
 main {
